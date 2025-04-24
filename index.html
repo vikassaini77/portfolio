@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <!-- Hamburger Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="fas fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+            <!-- Navbar Toggle Button with FontAwesome Icon -->
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="fas fa-bars"></span>
+                </button> -->
+
+            <!-- Dark Mode Toggle Button with Dynamic Icon -->
+                <button class="dark-mode-toggle" onclick="toggleDarkMode()">
+                    <i id="theme-icon" class="fas fa-moon"></i>
+                </button>
+            
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Hello, I'm <br> <span>Vikas Saini</span></h1>
+            <p>Machine Learning Engineer </p>
+                <a href="https://res.cloudinary.com/dzxxsgciy/image/upload/vikasres_chqa5c.pdf" class="btn btn-primary">Download Resume</a>
+    </div>
+    <div class="profile-img">
+        <img src="https://res.cloudinary.com/dzxxsgciy/image/upload/v1745491964/WhatsApp_Image_2025-04-24_at_16.16.14_7fb55bbd_rxp9xi.jpg" alt="Profile Image">
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I am a passionate Machine Learning Engineer with expertise in computer vision, NLP, and
+        real-world AI systems. I'm currently contributing as a freelancer at Outlier.AI and have a strong
+        interest in building innovative solutions, including a patented IoT-enabled cybersecurity system. I
+        aim to contribute to impactful projects like GSoC (OpenCV) and pursue roles in AI-focused
+        companies such as Netflix.</p>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="project-card">
+                <h3>Valo Bot - AI Chatbot</h3>
+                <h6>Technologies used- Amazon Bedrock | APIs | Interface Design</h6>
+                <p>•	Developed a chatbot for AWS & VCT Hackathon, assisting 100+ esports managers with player insights.</p>
+                <p>•	Designed to assist esports managers in finding and analyzing esports players.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="project-card">
+                <h3>Face Emotion Recognition System</h3>
+                <h6>Machine Learning | Python, OpenCV, CNN, Kera’s</h6>
+                <p>•	Built a real-time facial emotion detection system using CNNs trained on the FER-2013 dataset.</p>
+                <p>•	Integrated OpenCV for face detection and real-time video processing.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="project-card">
+                <h3>iOS Fitness App </h3>
+                <h6>Personal Project | Swift, Xcode, UI Kit/Swift UI, Core Data (if used)</h6>
+                <p>•	Designed UI components to display fitness goals, workout progress, and health data.</p>
+                <p>•	Developed a full-featured fitness tracking application for iOS with a user-friendly interface and interactive workout logging.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <h4>Freelancer - Outlier AI</h4>
+            <p>Duration: 2024 - Present</p>
+            <p>About: Developed and optimized computer vision and natural language processing (NLP) models for various AI-driven applications.</p>
+            <p>Tech stacks used: Python, NLTK, Hugging Face Transformers, PyTorch, OpenCV</p>
+        </div>
+    </div>
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications" class="certifications container mt-5">
+    <h2 class="text-center">Certifications</h2>
+    <div class="row text-left">
+        <!-- Certification One -->
+        <div class="col-md-4">
+            <div class="project-card p-3">
+                <h4 class="project-heading">Techvanto Academy -CPP programming</h3>
+                <p class="project-info"></p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#certModal1">View</button>
+            </div>
+        </div>
+
+        <!-- Certification Two -->
+        <div class="col-md-4">
+            <div class="project-card t p-3">
+                <h4 class="project-heading">Rannit-E: A Case Study Competition (NIT), Durgapur</h3>
+                <p class="project-info"></p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#certModal2">View</button>
+            </div>
+        </div>
+
+        <!-- Certification Three -->
+        <div class="col-md-4">
+            <div class="project-card text-center p-3">
+                <h4 class="project-heading">Healthcare Management System Hackathon by FLUXUS - IIT
+                    Indore 
+                   </h3>
+                <p class="project-info"></p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#certModal3">View</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal for Certification One -->
+<div class="modal fade" id="certModal1" tabindex="-1" aria-labelledby="certModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="certModalLabel1">Techvanto Academy -CPP programming</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="https://res.cloudinary.com/dzxxsgciy/image/upload/v1745492071/WhatsApp_Image_2025-04-24_at_16.15.52_4dd34e96_ai56zr.jpg" alt="Certification One" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Certification Two -->
+<div class="modal fade" id="certModal2" tabindex="-1" aria-labelledby="certModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="certModalLabel2">Rannit-E: A Case Study Competition (NIT), Durgapur</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="https://res.cloudinary.com/dzxxsgciy/image/upload/v1745492378/WhatsApp_Image_2025-04-24_at_16.28.39_5b819c0f_ivb6iv.jpg" alt="Certification Two" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Certification Three -->
+<div class="modal fade" id="certModal3" tabindex="-1" aria-labelledby="certModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="certModalLabel3">Healthcare Management System Hackathon by FLUXUS - IIT
+                    Indore 
+                   </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="https://res.cloudinary.com/dzxxsgciy/image/upload/v1745492379/WhatsApp_Image_2025-04-24_at_16.15.16_6dfb5a73_xyyrjj.jpg" alt="Certification Three"  class="img-fluid rounded" oncontextmenu="return false;">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Experience Section -->
+<section id="experience" class="experience">
+    <h2>ACHIEVEMENTS</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <h3>GLA University Chess Competition (In top 10 among 300 participants)</h3>
+            <h3>Hackathons: AWS & VCT AI Chatbot Hackathon</h3>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <!-- Replace with your Access Key -->
+                <input type="hidden" name="access_key" value="">
+            
+                <!-- Form Inputs. Each input must have a name="" attribute -->
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message"  placeholder="Your Message" required></textarea>
+            
+                <!-- Honeypot Spam Protection -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            
+                <!-- Custom Confirmation / Success Page -->
+                <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+            
+                <button class="btn btn-primary" type="submit">Submit Form</button>
+            
+            </form>
+        </div>
+        <div class="col-md-6" id="map">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.7480743148485!2d75.70229287460783!3d31.25539666018733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5f5e9c489cf3%3A0x4049a5409d53c300!2sLovely%20Professional%20University!5e0!3m2!1sen!2sin!4v1739035437652!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+        </div>
+    </div>
+</section>
+
+<!-- Social Media Floating Links -->
+<div class="social-links">
+    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/vikas-saini1/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://github.com/vikassaini77" target="_blank"><i class="fab fa-github"></i></a>
+</div>
+
+<!-- Scroll to Top Button -->
+<button onclick="scrollToTop()" id="scrollTopBtn" class="scroll-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function toggleDarkMode() {
+        const body = document.body;
+        if (body.hasAttribute('data-theme')) {
+            body.removeAttribute('data-theme');
+        } else {
+            body.setAttribute('data-theme', 'light');
+        }
+    }
+    // Show button when user scrolls down
+    window.onscroll = function () {
+        let scrollTopBtn = document.getElementById("scrollTopBtn");
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            scrollTopBtn.classList.add("show");
+        } else {
+            scrollTopBtn.classList.remove("show");
+        }
+    };
+
+    // Scroll to Top Function
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+    document.addEventListener("contextmenu", function (event) {
+            if (event.target.tagName === "IMG") {
+                event.preventDefault();
+                alert("Right-click is disabled on images.");
+            }
+        });
+</script>
+</body>
+</html>
